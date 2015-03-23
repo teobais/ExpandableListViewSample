@@ -1,0 +1,89 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:baselineAligned="false"
+    android:padding="25dp" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/subjectsNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Περασμένα μαθήματα:" />
+
+        <EditText
+            android:id="@+id/subjectsNumberET"
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="π.χ. 10" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Μ.Ο. αυτών:" />
+
+        <EditText
+            android:id="@+id/current_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="π.χ. 5.3" />
+    </TableRow>
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Υπολογισμός μέσου όρου για:" />
+
+  <Button
+            android:id="@+id/bSubjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="συγκεκριμένο αριθμό μαθημάτων" 
+            />
+
+        <Button
+            android:id="@+id/bGrades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="συγκεκριμένους βαθμούς" 
+            />
+
+        <Button
+            android:id="@+id/bWannaReachGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wanna_get_grade"
+            />
+
+        
+    
+</TableLayout>
+

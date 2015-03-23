@@ -1,0 +1,85 @@
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:padding="25dp" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/subjectsNumberTV"
+            android:layout_width="90sp"
+            android:layout_height="45sp"
+            android:layout_weight="0.6"
+            android:text="@string/estimated_passed_subjects" />
+
+        <EditText
+            android:id="@+id/subjectsNumberET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:hint="π.χ. 4"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="80sp"
+            android:layout_height="45sp"
+            android:text="@string/estimated_average" 
+            android:layout_weight="0.2"/>
+
+        <EditText
+            android:id="@+id/estimated_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="π.χ. 6.5" />
+
+    </TableRow>
+    
+     <TableRow
+         android:id="@+id/tableRow2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          >
+
+       <CheckBox 
+           android:layout_weight="1"
+           android:text="Διπλωματική"/>
+
+        <EditText
+            android:id="@+id/estimated_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="π.χ. 9" />
+
+    </TableRow>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:onClick="makeTheComputation"
+         android:text="@string/compute" />
+
+</TableLayout>

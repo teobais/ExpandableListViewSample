@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  android:padding="5dp"
+ 
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+   
+
+        <EditText
+            android:id="@+id/wannagradeET"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/thesisgradeET"
+            android:layout_alignLeft="@+id/thesisgradeET"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wannagradeET"
+            android:layout_alignBottom="@+id/wannagradeET"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:text="@string/desired_avg" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="@string/determined_grade_string" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="22dp"
+            android:text="@string/include_thesis_question" />
+
+        <EditText
+            android:id="@+id/thesisgradeET"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="56dp"
+            android:layout_marginRight="29dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="154dp"
+            android:onClick="computeIt"
+            android:text="@string/compute" />
+    </RelativeLayout>
+
+
+
